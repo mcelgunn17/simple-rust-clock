@@ -21,7 +21,7 @@ fn main() {
     print!("\x1b[?25l");
     loop {
         let t = Local::now();
-/// Gets the current time using the chrono library's 'Local::now()' function
+/// Gets the current time using the chrono library's 'Local::now()' function.
         let time = t.format("%H:%M:%S").to_string();
         for row in &DIGITS {
             for c in time.chars() {
